@@ -13,8 +13,12 @@ code {
 }
 
 /* Add this to your styles */
-@keyframes gradientAnimation {
+/* Add this to your styles */
+@keyframes moveBackground {
   0% {
+    background-position: 0 50%;
+  }
+  50% {
     background-position: 100% 50%;
   }
   100% {
@@ -23,8 +27,9 @@ code {
 }
 
 .animate-gradient {
-  animation: gradientAnimation 15s linear infinite;
+  animation: moveBackground 15s linear infinite;
 }
+
 
 
 @tailwind base;

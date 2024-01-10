@@ -1,0 +1,12 @@
+// Footer.js
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <footer style={{marginTop: 'auto'}} className="bg-indigo-550 p-4 text-white text-center">
+      <p>&copy; 2024 CourseEdu. All rights reserved.</p>
+    </footer>
+  );
+};
+
+export default Footer;
