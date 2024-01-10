@@ -12,6 +12,21 @@ code {
     monospace;
 }
 
+/* Add this to your styles */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradientAnimation 15s linear infinite;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

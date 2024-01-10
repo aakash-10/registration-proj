@@ -71,10 +71,12 @@ const AuthForm = () => {
   };
 
   return (
-    <div>
+    <>
+    <div className="relative overflow-x-hidden min-h-screen flex flex-col">
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 animate-gradient"></div>
     <NavBar />
-    <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
+    <div className="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-md shadow-md">
         <div>
           <img
             className="mx-auto h-12 w-auto"
@@ -172,6 +174,7 @@ const AuthForm = () => {
     </div>
 
     </div>
+    </>
   );
 };
 
